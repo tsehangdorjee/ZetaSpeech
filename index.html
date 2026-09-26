@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ZetaSpeech · Tibetan Speech for Synthesis</title>
+  <meta name="description" content="ZetaSpeech 藏语多方言语音数据集：安多、卫藏、康巴语音合成样例。">
+  <meta property="og:title" content="ZetaSpeech — Tibetan Speech for Synthesis">
+  <meta property="og:description" content="Explore Amdo, Ü-Tsang and Kham speech synthesis samples with dots.tts and CosyVoice3.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="samples.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+  <header class="nav"><a href="#" class="brand">Zeta<span>Speech</span></a><nav aria-label="主导航"><a href="#overview">项目介绍</a><a href="#samples">语音样例</a><a href="#access">数据访问</a></nav></header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">TIBETAN SPEECH DATASET · RESEARCH DEMO</p>
+      <h1>ZetaSpeech</h1>
+      <p class="subtitle">A Multi-Dialect Tibetan Corpus for Speech Synthesis</p>
+      <p class="hero-copy">面向语音合成的藏语多方言语料。<br>在安多、卫藏与康巴的声音中，聆听语言的多样性。</p>
+      <div class="actions"><a class="button" href="#samples">聆听语音样例 <span aria-hidden="true">↗</span></a><a class="button secondary" href="#overview">了解 ZetaSpeech</a></div>
+      <div class="dialect-line"><span>AMDO <b>安多</b></span><i></i><span>Ü-TSANG <b>卫藏</b></span><i></i><span>KHAM <b>康巴</b></span></div>
+    </section>
+    <section class="section overview" id="overview">
+      <div class="section-heading"><p class="eyebrow">01 / OVERVIEW</p><h2>为藏语语音合成而构建</h2></div>
+      <div class="overview-body"><p class="lead">ZetaSpeech 聚焦高质量藏语语音合成，围绕三大方言组织真实语音材料，结合音频筛选、转写校对与说话人身份信息，支持藏语语音生成研究。</p>
+      <div class="features"><article><span class="feature-num">01</span><h3>三方言覆盖</h3><p>覆盖安多、卫藏与康巴，保留不同方言的语音特征。</p></article><article><span class="feature-num">02</span><h3>面向合成的数据质量</h3><p>关注音质、文本与语音对应关系，以及符合语义的音频切分。</p></article><article><span class="feature-num">03</span><h3>跨文件说话人一致性</h3><p>以统一说话人标签连接不同录音，为音色建模提供基础。</p></article></div></div>
+    </section>
+    <section class="section" id="samples">
+      <div class="section-heading"><p class="eyebrow">02 / AUDIO EXAMPLES</p><h2>同一句藏文，四个合成模型</h2><p>在相同文本与音色条件下比较 dots.tts、CosyVoice3、CosyVoice2 与 F5-TTS 的合成结果。</p></div>
+      <div class="sample-summary"><span><strong>3</strong> 方言</span><span><strong>6</strong> 测试音色</span><span><strong>24</strong> 文本条件</span><span><strong>80</strong> 合成样例</span></div>
+      <div class="controls"><div class="tabs" role="group" aria-label="选择方言"><button type="button" class="active" data-dialect="amdo" aria-pressed="true">安多 <span>Amdo</span></button><button type="button" data-dialect="utsang" aria-pressed="false">卫藏 <span>Ü-Tsang</span></button><button type="button" data-dialect="kham" aria-pressed="false">康巴 <span>Kham</span></button></div><label class="genre-label">语体 <select id="genre"><option value="all">全部</option><option value="read">朗读 · Read</option><option value="news">新闻 · News</option></select></label></div>
+      <p id="sample-count" class="sample-count" aria-live="polite"></p>
+      <div id="sample-groups"></div>
+      <noscript><p>请启用 JavaScript 以显示语音播放器和藏文文本。</p></noscript>
+      <p class="sample-note">本页展示开发阶段的合成样例，不提供 MOS 评分或模型性能排名。CosyVoice3 样例由指定部署 API 生成。</p>
+    </section>
+    <section class="section access" id="access"><div><p class="eyebrow">03 / DATA ACCESS</p><h2>研究使用与数据访问</h2></div><div><p>ZetaSpeech 采用申请后受控访问的方式。数据集交付内容与公开样例的使用范围分别说明。</p><p class="muted">数据申请入口及论文链接将在正式发布时更新。</p></div></section>
+  </main>
+  <footer><a class="brand" href="#">Zeta<span>Speech</span></a><p>Tibetan speech, in its many voices.</p><a href="#samples">返回语音样例 ↑</a></footer>
+</body></html>
